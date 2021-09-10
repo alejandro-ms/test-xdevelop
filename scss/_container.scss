@@ -1,0 +1,11 @@
+//$width-grid: 85vw;
+$height-grid: calc(100vh - 10%);
+
+@mixin container-grid ($columns, $width-grid) {
+    display: grid;
+    width: $width-grid;
+    margin: 0 auto;
+    height: $height-grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: 50% 20% 30%;
+}

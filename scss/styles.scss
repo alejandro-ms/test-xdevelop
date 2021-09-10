@@ -1,0 +1,96 @@
+@import 'fonts';
+@import 'container';
+@import 'header';
+@import 'main';
+@import 'cards';
+
+body {
+    font-family: $font-family;
+}
+
+.header {
+    @include header-container(90%);
+}
+
+.container {
+    @include container-grid(2, 85vw);  
+}
+
+@media (max-width: 1300px) {
+
+    $card-title-mobile: 0.5rem;
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        @include header-container(100%);
+    }
+    .header__option {
+        font-size: $card-title-mobile;
+        text-align: center;
+    }
+    .header__button {
+       font-size: $card-title-mobile;
+    }
+
+    .container {
+        @include container-grid(1, 100vw); 
+        grid-template-columns: 1;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .container {
+        height: 100vh;
+    }
+    
+    .main-texts {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+    } 
+
+    .main-img {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+     margin: 0 auto;
+    }
+
+    .main-subtitle-jobs {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .main-subtitle {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    .main-title {
+        text-align: center;
+    }
+
+    .main-input-container {
+        margin: 0 auto;
+    }
+
+    .section-cards {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 1em auto;
+        max-width: 14em;
+        width: 80vw;
+    }
+
+    
+}
+
+
+
+
+

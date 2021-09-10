@@ -1,0 +1,45 @@
+$height-header: 10%;
+$color-purple: #5f45d5;
+
+@mixin header-container($width-header) {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-header;
+    height: $height-header;
+}
+
+.header__logo {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    gap: 1em;
+}
+
+.header__option {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: $text-uppercase;
+    font-size: $card-title;
+}
+
+.btn-container {
+    height: 2.5em;
+    width: 6em;
+    background-color: $color-purple;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.header__button {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: $text-uppercase;
+}
