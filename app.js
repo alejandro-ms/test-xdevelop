@@ -16,7 +16,7 @@ $puzzleLink.forEach((listElements, i) => {
             p.classList.add('card__p');
             $puzzleImg[i].style.backgroundColor = "#8E54E9";
             $puzzleLink[i].style.backgroundColor = "#8E54E9";
-            $puzzleImg[i].style.backgroundImage =  'url(../assets/puzzle-icon-white.svg)';
+            $puzzleImg[i].style.backgroundImage =  'url(/assets/puzzle-icon-white.svg)';
         }
     })
     listElements.addEventListener("mouseout", () => {
@@ -26,7 +26,7 @@ $puzzleLink.forEach((listElements, i) => {
             $cards[i].style.boxShadow = "";
             $puzzleLink[i].style.backgroundColor = '#fff';
             $puzzleImg[i].style.backgroundColor = '#fff';
-            $puzzleImg[i].style.backgroundImage =  'url(../assets/puzzle-icon.svg)';
+            $puzzleImg[i].style.backgroundImage =  'url(/assets/puzzle-icon.svg)';
         }
     })
 })
